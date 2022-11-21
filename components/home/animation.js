@@ -3,8 +3,14 @@ import Lottie from "react-lottie-player";
 // Alternatively:
 // import Lottie from 'react-lottie-player/dist/LottiePlayerLight'
 
-import lottieJson from "/public/animation.json";
+// import lottieJson from "/public/developer-skills.json";
 
 export default function Animation() {
-  return <Lottie loop animationData={lottieJson} play />;
+  const [animationData, setAnimationData] = useState();
+
+  useEffect(() => {
+    import("/public/developer-skills.json").then(setAnimationData);
+  }, []);
+  if (!animationData) return <div>Loading...</div>;
+  return <Lottie loop animationData={animationData} play />;
 }
