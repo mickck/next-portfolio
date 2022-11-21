@@ -1,13 +1,8 @@
 import React from "react";
-// import Lottie from "react-lottie-player";
-import Lottie from "lottie-react";
-import developer from "/public/developer.json";
+import Lottie from "react-lottie-player";
 
-// Alternatively:
-// import Lottie from 'react-lottie-player/dist/LottiePlayerLight'
-
-// import lottieJson from "/public/developer-skills.json";
+import lottieJson from "/public/animation.json";
 
 export default function Animation() {
-  return <Lottie loop={true} animationData={developer} play />;
+  return <Lottie loop animationData={lottieJson} play style={{ width: `100%`, height: `100%` }} />;
 }
