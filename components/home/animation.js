@@ -12,5 +12,5 @@ export default function Animation() {
     import("/public/developer-skills.json").then(setAnimationData);
   }, []);
   if (!animationData) return <div>Loading...</div>;
-  return <Lottie loop animationData={animationData} play />;
+  return <Lottie loop animationData={animationData} play speed='0.5' />;
 }
