@@ -9,7 +9,7 @@ export default function Animation() {
   const [animationData, setAnimationData] = useState();
 
   useEffect(() => {
-    import("/public/developer-skills.json").then(setAnimationData);
+    import("/public/developer.json").then(setAnimationData);
   }, []);
   if (!animationData) return <div>Loading...</div>;
   return <Lottie loop animationData={animationData} play speed='0.5' />;
