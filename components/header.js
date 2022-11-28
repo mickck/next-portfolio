@@ -1,23 +1,20 @@
 import Link from "next/link";
 import DarkModeToggleButton from "./dark-mode-toggle-button";
+import * as Scroll from "react-scroll";
+import Image from "next/image";
+import logo from "../public/MK2.png";
 
 export default function Header() {
+  let scroll = Scroll.animateScroll;
+  function onFooter() {
+    scroll.scrollToBottom();
+  }
   return (
     <>
       <header className='text-gray-600 body-font'>
         <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
           <Link href='/' className='flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              fill='none'
-              stroke='currentColor'
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth='2'
-              className='w-10 h-10 text-white p-2 bg-blue-500 rounded-full'
-              viewBox='0 0 24 24'>
-              <path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'></path>
-            </svg>
+            <Image src={logo} className='rounded-full' alt='logo' width={35} height={35}></Image>
             <span className='ml-3 text-xl'>Mike`s portfolio</span>
           </Link>
           <nav className='md:ml-auto flex flex-wrap items-center text-base justify-center'>
@@ -27,12 +24,12 @@ export default function Header() {
             <Link className='mr-5 hover:text-gray-900' href='/project'>
               Project
             </Link>
-            <Link className='mr-5 hover:text-gray-900' href='/about'>
+            {/* <Link className='mr-5 hover:text-gray-900' href='/about'>
               About
-            </Link>
-            <Link className='mr-5 hover:text-gray-900' href=''>
+            </Link> */}
+            <div className='mr-5 hover:text-gray-900 cursor-pointer' onClick={onFooter}>
               Contact
-            </Link>
+            </div>
             <DarkModeToggleButton />
           </nav>
         </div>

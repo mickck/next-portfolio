@@ -10,8 +10,8 @@ export default function Hero() {
           <br className='hidden lg:inline-block' />
         </h1>
         <p className='mb-8 leading-relaxed'>
-          Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric
-          truffaut hexagon try-hard chambray.
+          Front End Developer based in Melbourne with experience and passion for responsive websites to deliverer exceptional user experiences. Proficient in JavaScript, TypeScript, HTML/CSS, modern
+          libraries and frameworks. Passionate about aesthetics and usability.
         </p>
         <div className='flex justify-center'>
           <Link className='btn-project' href='/project'>
