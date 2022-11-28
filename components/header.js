@@ -2,7 +2,7 @@ import Link from "next/link";
 import DarkModeToggleButton from "./dark-mode-toggle-button";
 import * as Scroll from "react-scroll";
 import Image from "next/image";
-import logo from "../public/MK2.png";
+import logo from "../public/mk2.png";
 
 export default function Header() {
   let scroll = Scroll.animateScroll;
