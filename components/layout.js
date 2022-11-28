@@ -9,7 +9,7 @@ export default function Layout({ children }) {
       <Head>
         <title>Mike`s portfolio</title>
         <meta name='description' content='Today also needs to do coding hard.' />
-        <link rel='icon' href='/mk2.ico' />
+        <link rel='icon' href='/mk.ico' />
       </Head>
       <div>{children}</div>
       <Footer />

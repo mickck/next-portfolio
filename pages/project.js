@@ -12,7 +12,6 @@ export default function Projects({ projects }) {
         <Head>
           <title>Mike Portfolio</title>
           <meta name='description' content='hard' />
-          <link rel='icon' href='/favicon.ico' />
         </Head>
         <h1 className='text-4xl font-bold sm:text-6xl pb-0'>
           Toal Projects :<span className='pl-4 text-blue-500'>{projects.results.length}</span>
