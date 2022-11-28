@@ -2,7 +2,7 @@ import Link from "next/link";
 import DarkModeToggleButton from "./dark-mode-toggle-button";
 import * as Scroll from "react-scroll";
 import Image from "next/image";
-import logo from "../public/mk2.png";
+import logo from "../public/mk_circle.png";
 
 export default function Header() {
   let scroll = Scroll.animateScroll;
@@ -14,7 +14,7 @@ export default function Header() {
       <header className='text-gray-600 body-font'>
         <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
           <Link href='/' className='flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0'>
-            <Image src={logo} className='rounded-full' alt='logo' width={35} height={35}></Image>
+            <Image src={logo} className='' alt='logo' width={35} height={35}></Image>
             <span className='ml-3 text-xl'>Mike`s portfolio</span>
           </Link>
           <nav className='md:ml-auto flex flex-wrap items-center text-base justify-center'>
