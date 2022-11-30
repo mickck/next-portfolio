@@ -1,6 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio website
 
-## Getting Started
+Portfolio project with Routing, dark/light mode switching and Contact features built using ReactJS, NextJS and Tailwind CSS
+
+Webpage: https://next-portfolio-one-cyan.vercel.app/
+
+![portfolio](https://user-images.githubusercontent.com/49193381/204902862-bebb94af-b230-417a-b029-d04544591a79.png)
+
+## Key Features
+
+- Routing
+- Dark/Light Mode Switch
+- Contact
+
+## Technologies used
+
+- ReactJS
+- NextJS
+- TailwindCSS
+
+## Set up
 
 First, run the development server:
 
