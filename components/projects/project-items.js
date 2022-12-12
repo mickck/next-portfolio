@@ -36,9 +36,11 @@ export default function ProjectItem({ data }) {
       <div className='p-4 flex flex-col'>
         <h1 className='text-2xl font-bold'>{title}</h1>
         <h3 className='mt-4 text-xl'>{description}</h3>
-        <Link href={`${site}`} className='mt-0 text-xl' target='_blank'>
-          Go to a homepage
-        </Link>
+        {site ? (
+          <Link href={`${site}`} className='mt-0 text-xl' target='_blank'>
+            Go to a homepage
+          </Link>
+        ) : null}
         <Link href={`${github}`}>github</Link>
 
         {/* <p className='my-1 '>

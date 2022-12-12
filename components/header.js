@@ -24,8 +24,8 @@ export default function Header() {
             <Link className='mr-5 hover:text-gray-900' href='/project'>
               Project
             </Link>
-            {/* <Link className='mr-5 hover:text-gray-900' href='/about'>
-              About
+            {/* <Link className='mr-5 hover:text-gray-900' href='/resume'>
+              Resume
             </Link> */}
             <div className='mr-5 hover:text-gray-900 cursor-pointer' onClick={onFooter}>
               Contact
