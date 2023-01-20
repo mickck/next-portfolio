@@ -11,24 +11,24 @@ export default function Header() {
   }
   return (
     <>
-      <header className='text-gray-600 body-font'>
+      <header className='text-gray-600 body-font '>
         <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
+          {/* Navbar left side */}
           <Link href='/' className='flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0'>
             <Image src={logo} className='' alt='logo' width={35} height={35}></Image>
             <span className='ml-3 text-xl'>Mike`s portfolio</span>
           </Link>
-          <nav className='md:ml-auto flex flex-wrap items-center text-base justify-center'>
-            <Link className='mr-5 hover:text-gray-900' href='/'>
+          {/* Navbar rightside */}
+          <nav className='md:ml-auto flex flex-wrap items-center text-base justify-center space-x-5'>
+            <Link className=' hover:text-gray-800' href='/'>
               Home
             </Link>
-            <Link className='mr-5 hover:text-gray-900' href='/project'>
+            <Link className=' hover:text-gray-800 ' href='/project'>
               Project
             </Link>
-            {/* <Link className='mr-5 hover:text-gray-900' href='/resume'>
-              Resume
-            </Link> */}
-            <div className='mr-5 hover:text-gray-900 cursor-pointer' onClick={onFooter}>
-              Contact
+
+            <div className=' hover:text-gray-800 cursor-pointer' onClick={onFooter}>
+              <Link href=''>Contact</Link>
             </div>
             <DarkModeToggleButton />
           </nav>

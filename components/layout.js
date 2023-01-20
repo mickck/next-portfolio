@@ -8,7 +8,6 @@ export default function Layout({ children }) {
       <Header />
       <Head>
         <title>Mike`s portfolio</title>
-        <meta name='description' content='Today also needs to do coding hard.' />
         <link rel='icon' href='/mk.ico' />
       </Head>
       <div>{children}</div>
