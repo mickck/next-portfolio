@@ -59,7 +59,7 @@ export default function ProjectItem({ data }) {
             Go to a homepage
           </Link>
         ) : null}
-        <Link href={`${github}`}>github</Link>
+        {github ? <Link href={`${github}`}>github</Link> : null}
 
         {/* <p className='my-1 '>
           period : {start} ~ {end} ({calculatedPeriod(start, end)}days)
