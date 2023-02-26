@@ -2,6 +2,7 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import Animation from "./animation";
+import * as React from "react";
 
 export default function Hero({ projects }) {
   const projectImages = projects.results.map((image) => image.cover.file?.url);
@@ -16,16 +17,18 @@ export default function Hero({ projects }) {
 
   const transitionStyle = `transform 1000ms ease 0s`;
   const [transition, setTransition] = useState("");
+  const [resize, setResize] = useState();
 
   // copied slide Arr for infinite Slider
   let copiedImages = [lastSlide, ...projectImages, firstSlide];
 
   // responsive resizing function for mobile
-  const [resize, setResize] = useState("");
   const handleResize = () => {
     setResize(window.innerWidth);
   };
-
+  React.useEffect(() => {
+    setResize(window.innerWidth);
+  }, []);
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     return () => {
@@ -89,7 +92,7 @@ export default function Hero({ projects }) {
       {resize >= 1280 || resize === "" ? (
         <div
           className={
-            "overflow-hidden  w-[546px] h-[390px] rounded-md max-w-full"
+            "overflow-hidden  w-[546px] sm:h-[390px] rounded-md max-w-full "
           }
         >
           {copiedImages.map((slideImage, slideIndex) => {
@@ -98,9 +101,9 @@ export default function Hero({ projects }) {
                 key={slideIndex}
                 style={{
                   transform: `translate3d(0px,${imageNumber * -396}px, 0px `,
-
                   transition: `${transition}`,
                 }}
+                className={"xxs:"}
               >
                 <Image
                   src={`${slideImage}`}
