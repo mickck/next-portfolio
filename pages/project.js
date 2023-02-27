@@ -42,8 +42,8 @@ export async function getServerSideProps() {
     body: JSON.stringify({
       sorts: [
         {
-          property: "Name",
-          direction: "ascending",
+          property: "Created time",
+          direction: "descending",
         },
       ],
       page_size: 100,

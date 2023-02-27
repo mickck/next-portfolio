@@ -27,7 +27,7 @@ export default function ProjectItem({ data }) {
       endDateStringArray[2]
     );
 
-    console.log(`startDate: ${startDate}`);
+    // console.log(`startDate: ${startDate}`);
     // console.log(`endDate: ${endDate}`);
 
     const diffInMs = Math.abs(endDate - startDate);
