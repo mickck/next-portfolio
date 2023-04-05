@@ -39,6 +39,7 @@ export async function getServerSideProps() {
       "Content-Type": "application/json",
       Authorization: `Bearer ${TOKEN}`,
     },
+
     body: JSON.stringify({
       sorts: [
         {

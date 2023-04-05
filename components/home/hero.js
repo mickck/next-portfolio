@@ -89,7 +89,7 @@ export default function Hero({ projects }) {
       </div>
 
       {/* slide image */}
-      {resize >= 1280 || resize === "" ? (
+      {/* {resize >= 1280 || resize === "" ? (
         <div
           className={
             "overflow-hidden  w-[546px] sm:h-[390px] rounded-md max-w-full "
@@ -119,10 +119,11 @@ export default function Hero({ projects }) {
           })}
         </div>
       ) : (
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <Animation />
-        </div>
-      )}
+       
+      )} */}
+      <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <Animation />
+      </div>
       {/* </div> */}
     </>
   );

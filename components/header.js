@@ -11,24 +11,36 @@ export default function Header() {
   }
   return (
     <>
-      <header className='text-gray-600 body-font '>
-        <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
+      <header className="text-gray-600 body-font ">
+        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center shadow-md border-b border-b-gray-500">
           {/* Navbar left side */}
-          <Link href='/' className='flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0'>
-            <Image src={logo} className='' alt='logo' width={35} height={35}></Image>
-            <span className='ml-3 text-xl'>Mike`s portfolio</span>
+          <Link
+            href="/"
+            className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+          >
+            <Image
+              src={logo}
+              className=""
+              alt="logo"
+              width={35}
+              height={35}
+            ></Image>
+            <span className="ml-3 text-xl">Mike`s portfolio</span>
           </Link>
           {/* Navbar rightside */}
-          <nav className='md:ml-auto flex flex-wrap items-center text-base justify-center space-x-5'>
-            <Link className=' hover:text-gray-800' href='/'>
+          <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center space-x-5">
+            <Link className=" hover:text-gray-800" href="/">
               Home
             </Link>
-            <Link className=' hover:text-gray-800 ' href='/project'>
+            <Link className=" hover:text-gray-800 " href="/project">
               Project
             </Link>
 
-            <div className=' hover:text-gray-800 cursor-pointer' onClick={onFooter}>
-              <Link href=''>Contact</Link>
+            <div
+              className=" hover:text-gray-800 cursor-pointer"
+              onClick={onFooter}
+            >
+              <Link href="">Contact</Link>
             </div>
             <DarkModeToggleButton />
           </nav>
