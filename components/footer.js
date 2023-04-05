@@ -9,7 +9,7 @@ export default function Footer() {
             {`Mike's `}
             <Link
               href="/project"
-              className="text-gray-600 ml-1 "
+              className="text-gray-600 ml-1 hover:text-gray-700"
               rel="noopener noreferrer"
             >
               portfolio

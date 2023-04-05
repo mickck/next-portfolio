@@ -11,8 +11,8 @@ export default function Projects({ projects }) {
           <title>Mike Portfolio</title>
           <meta name="description" content="hard" />
         </Head>
-        <h1 className="text-4xl font-bold sm:text-6xl pb-0">
-          Toal Projects :
+        <h1 className="text-4xl font-bold sm:text-6xl py-10">
+          Toal Projects:
           <span className="pl-4 text-blue-500">{projects.results.length}</span>
         </h1>
 

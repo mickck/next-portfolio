@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <>
       <header className="text-gray-600 body-font ">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center shadow-md border-b border-b-gray-500">
+        <div className=" px-12 mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center shadow-md ">
           {/* Navbar left side */}
           <Link
             href="/"
@@ -25,7 +25,7 @@ export default function Header() {
               width={35}
               height={35}
             ></Image>
-            <span className="ml-3 text-xl">Mike`s portfolio</span>
+            <span className="ml-3">Mike`s portfolio</span>
           </Link>
           {/* Navbar rightside */}
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center space-x-5">

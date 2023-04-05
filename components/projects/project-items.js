@@ -37,7 +37,7 @@ export default function ProjectItem({ data }) {
   };
 
   return (
-    <div className="project-card ">
+    <div className="project-card">
       {/* <div className='rounded-t-xl bg-slate-800	w-auto h-full flex justify-center items-center'> */}
       <Image
         src={`${imgSrc}`}

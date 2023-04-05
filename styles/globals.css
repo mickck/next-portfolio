@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+ font-family: 'Helvetica';
+}
 .bg-primary {
   @apply bg-white dark:bg-slate-800;
 }
